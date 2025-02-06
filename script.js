@@ -37,10 +37,13 @@ const displayProducts = (category) => {
   document.querySelectorAll(".addtocartbtn").forEach((button) => {
     button.addEventListener("click", (e) => {
       addToCart(e.target.getAttribute("product-id"));
-      document.querySelector('.message').classList.replace('hidden', 'visible')
-      setTimeout(() => {
-        document.querySelector(".message").classList.replace("visible", "hidden");
+      document.querySelector(".message").classList.replace("hidden", "visible");
+      const timer = setTimeout(() => {
+        document
+          .querySelector(".message")
+          .classList.replace("visible", "hidden");
       }, 1500);
+      if (timer) clearTimeout(timer);
     });
   });
 };
