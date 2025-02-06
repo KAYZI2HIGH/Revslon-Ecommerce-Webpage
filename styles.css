@@ -44,6 +44,8 @@ main {
 }
 
 .categories {
+  overflow: scroll;
+  scrollbar-width: none;
   display: flex;
   gap: 10px;
 }
@@ -119,10 +121,17 @@ main {
   transition: right 0.3s ease-in-out;
   padding: 20px;
   overflow: scroll;
+  scrollbar-width: none;
 }
+
 
 .cart.open {
   right: 0;
+}
+@media screen and (max-width: 768px) {
+  .cart{
+    width: 85%;
+  }
 }
 
 .close-cart-btn {

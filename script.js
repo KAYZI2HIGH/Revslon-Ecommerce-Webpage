@@ -43,7 +43,6 @@ const displayProducts = (category) => {
           .querySelector(".message")
           .classList.replace("visible", "hidden");
       }, 1500);
-      if (timer) clearTimeout(timer);
     });
   });
 };
