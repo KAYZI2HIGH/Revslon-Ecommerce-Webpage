@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Shop</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>Shop</h1>
+        <button
+          id="cart-btn"
+          class="cart-btn"
+        >
+          🛒
+          <span
+            id="cart-count"
+            class="cart-count"
+            >0</span
+          >
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="categories">
+        <button data-category="all">All</button>
+        <button data-category="shoes">Shoes</button>
+        <button data-category="clothing">Clothing</button>
+        <button data-category="accessories">Accessories</button>
+      </div>
+      <div
+        id="products-container"
+        class="products-container"
+      ></div>
+    </main>
+    <div class="backdrop">
+      <div
+        id="cart"
+        class="cart"
+      >
+        <button
+          id="close-cart-btn"
+          class="close-cart-btn"
+        >
+          ✖
+        </button>
+        <h2>Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+        <button
+          id="checkout-btn"
+          class="checkout-btn"
+        >
+          Checkout
+        </button>
+      </div>
+    </div>
+
+    <div class="hidden message">
+      <p>✅ Added to cart!</p>
+    </div>
+
+    <script
+      src="products.js"
+      type="module"
+    ></script>
+    <script
+      src="script.js"
+      type="module"
+    ></script>
+  </body>
+</html>
